@@ -17,7 +17,7 @@ def check_status(blinkqueue,working=0,warning=1,error=2,url="",keys=[],interval=
             b.blink(error,100,interval-1)
         else: 
             b.blink(error,0,interval-1)
-    except TypeError: #(KeyError, ValueError, requests.exceptions.ConnectionError):
+    except (KeyError, ValueError, requests.exceptions.ConnectionError):
         b.blink(warning,1,interval-1)
 
 def welcome(b,working=0,warning=1,error=2):
