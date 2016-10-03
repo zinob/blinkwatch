@@ -1,0 +1,12 @@
+[Unit]
+Description=Blinking led when service fails
+After=gpiooff.service
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/home/pi/blinkwatch/blinkwatch.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

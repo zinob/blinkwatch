@@ -1,0 +1,13 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Default-Start:     2 3 4 5
+# Provides:          gpiooff
+# Required-Start:    
+# Required-Stop:     
+# Default-Stop:      
+# Short-Description: Turns GPIO 2,3,4 off
+# Description:       GPIO on lower pins are high by default, this turns
+#                    them in to output GPIO and sets the level to low
+### END INIT INFO
+
+/usr/local/bin/gpiooff.py
