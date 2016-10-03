@@ -1,6 +1,6 @@
 # blinkwatch
 
-A simple script to monitory an URL for falsy JSON values.
+A simple script for the Raspberry Pi to monitory an URL for falsy JSON values and blink LEDs on the GPIO when it fails.
 
 Currently the LED mappings are made in 2 places, just to make the code confusing, one for indexing GPIO ports to "easy to remember" numbers in blinkenq.py and one in the ini-file.
 
